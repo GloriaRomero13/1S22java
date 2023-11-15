@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class P3p2_1S22{
+public class P3p1_1S22{
 
 
 static Scanner teclado = new Scanner(System.in);
@@ -52,14 +52,13 @@ static Scanner teclado = new Scanner(System.in);
     }
 	public static void main(String[] args) {
 		String opc;
-        while (true){
+
 		menu();
 		opc=teclado.nextLine();
-		if (opc.equals("A")) Suma();
-		if (opc.equals("B")) Resta();
-		if (opc.equals("C")) Division();
-		if (opc.equals("D")) Multiplicacion();
-		if (opc.equals("E")) break;
-	 }
+		while (opc.equals("A")) Suma();
+		while (opc.equals("B")) Resta();
+		while (opc.equals("C")) Division();
+		while (opc.equals("D")) Multiplicacion();
+		while (opc.equals("E")) break;
 	}
 }
